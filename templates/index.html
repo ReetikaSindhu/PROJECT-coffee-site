@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    {{bootstrap.load_css()}}
+    <link rel='stylesheet' type='text/css' media='screen' href='../static/coffee_main.css'>
+    {% block styling %} <style>
+    
+   
+        
+    </style>{% endblock %}
+</head>
+<body style="color: azure;font-size: xx-large;">{% block content %}{% endblock %}
+    <div class="container">
+        <div class="jumbotron"style="display :flex; flex-direction:column;justify-content:center">
+            <h1 class="display-4" style="font-size: 154px;font-family: Verdana, Geneva, Tahoma, sans-serif;justify-content: center;margin-left: 10%;background-image: linear-gradient(to right,rgb(246, 241, 241,0.6)0%,rgb(43, 209, 43,0.3) 50%);"> Coffee Life</h1>
+            <p class="lead">You are trying our outmost to Connect You with the Best Coffee Shops.So that a Good Cup of Coffee Brews up your day</p>
+            <hr class="my-4">
+            <p>You can find Coffee which connects to your taste buds .A Coffee which is brimming with taste as refined as You Are !</p>
+            <div id="addcoffee" style="margin: 0;padding: 0; display :flex; flex-direction:column;justify-content:center">
+              <p style="justify-content:center">
+              <a class="btn btn-primary btn-lg" href="/add_coffee_shops" role="button">ADD COFFEE SHOPS</a>
+              
+            <div id="seecoffee"> <p  style="justify-content:center ">
+              <a style=" display :flex; flex-direction:column;width:20%;margin: 7% 0 0 37% ;"class="btn btn-primary btn-lg" href="/seecoffee" role="button">SEE COFFEE SHOPS</a></div>
+          </p></div>
+          </div>
+      </div>
+</body>
+</html>
